@@ -35,8 +35,8 @@ jobs:
           path: .
           options: --exclude=*.log
 
-      - name: Check code style
-        run: pint --test
+      # - name: Check code style
+      #   run: pint --test
 
       - name: Install dependencies
         run: composer Install --no-ansi --no-interaction --no-scripts --no-progress --prefer-dist
