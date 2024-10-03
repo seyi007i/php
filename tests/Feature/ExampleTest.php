@@ -18,7 +18,9 @@ class ExampleTest extends TestCase
         $response = $this->get('/');
 
         $response->assertStatus(200);
+        
         $this->assertNotNull($user->id);
-        $this->assertSame( expected: 1, User::all()->count());
+
+        $this->assertSame(1, User::all()->count());
     }
 }
