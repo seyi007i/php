@@ -16,7 +16,7 @@ jobs:
         run: echo php-version
 
       - name: scan code repo
-        uses: overtrue/phplint@8.0
+        uses: overtrue/phplint@8.1
         with:
           path: .
           options: --exclude=*.log
