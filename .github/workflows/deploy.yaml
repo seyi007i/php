@@ -1,5 +1,5 @@
-name: GitHub Actions Demo
-run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+name: Test php application
+run-name: ${{ github.actor }} is testing out php 🚀
 on: [push]
 jobs:
   Explore-GitHub-Actions:
@@ -48,6 +48,7 @@ jobs:
           DB_USERNAME: root
           DB_PASSWORD: null
           DB_DATABASE: test
+        run: vendor/bin/phpunit
 
 
 
